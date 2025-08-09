@@ -7,17 +7,9 @@ body {
 html, body {
     height: 100%;
     margin: 0;                 /* remove default gap */
+    overflow: hidden; /* hides scrollbars */
   }
 
-  /* apply background to body and force it to fill the viewport */
-  body {
-    min-height: 100vh;                                 /* ensures body >= viewport */
-    background: url('photos/background.png') center/cover no-repeat;
-    /* background-position/size: cover → crops to fill */
-    background-attachment: scroll; /* avoid 'fixed' on mobile if you see issues */
-  }
-
-  /* optional: tweak crop for portrait */
   @media (orientation: portrait) {
     body {
       background-position: top center; /* crop focuses on top in portrait */
@@ -30,3 +22,33 @@ html, body {
     width: 100%;
     background: blue;
 }
+.portFolderIcon{
+    height:10%;
+    position: relative;
+    top:20;
+}
+.portraitFolder{
+    background-color: aqua;
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    font-size: 120%;
+}
+.openPortraitFolder{
+    display: none;
+    background-image: url('photos/openFolder.png');
+    width:600px;
+    height: 425px;
+    background-size: cover;
+    position: relative;
+    left: 30%;
+}
+.wizardPhoto{
+    height:65%;
+    position: relative;
+    left:45%;
+    top:25%
+}
+
