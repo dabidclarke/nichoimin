@@ -1,0 +1,32 @@
+body {
+    background-image: url('photos/background.png');
+    background-size: cover;      /* make it fill the screen */
+    background-repeat: no-repeat; /* prevent tiling */
+    
+}
+html, body {
+    height: 100%;
+    margin: 0;                 /* remove default gap */
+  }
+
+  /* apply background to body and force it to fill the viewport */
+  body {
+    min-height: 100vh;                                 /* ensures body >= viewport */
+    background: url('photos/background.png') center/cover no-repeat;
+    /* background-position/size: cover → crops to fill */
+    background-attachment: scroll; /* avoid 'fixed' on mobile if you see issues */
+  }
+
+  /* optional: tweak crop for portrait */
+  @media (orientation: portrait) {
+    body {
+      background-position: top center; /* crop focuses on top in portrait */
+    }
+  }
+.taskbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+}
