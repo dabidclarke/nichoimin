@@ -27,6 +27,7 @@ html, body {
     position: relative;
     top:20;
 }
+/*portrait folder*/
 .portraitFolder{
     padding: 10px;
     width: 80px;
@@ -38,13 +39,117 @@ html, body {
 .openPortraitFolder{
     display: none;
     background-image: url('photos/openFolder.png');
-    width:600px;
-    height: 425px;
+    width:65%;
     background-size: cover;
-    position: relative;
+    position: absolute;
+    aspect-ratio: 756/537;
     left: 30%;
+    top:3%;
+    z-index: 100;
 }
+.openPortraitFolder button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+/*fashion folder*/
+.fashionFolderIcon{
+    height:10%;
+    position: relative;
+    top:20;
+}
+.fashionFolder{
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    left: 40%;
+    top: 10%;
+    font-size: 120%;
+}
+
+.openFashionFolder{
+    display: none;
+    background-image: url('photos/openFolder.png');
+    width:65%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 756/537;
+    left: 25%;
+    top:5%;
+    z-index: 99;
+}
+
+.openFashionFolder button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+
+/*events folder*/
+.eventFolderIcon{
+    height:10%;
+    position: relative;
+    top:20;
+}
+.eventFolder{
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    font-size: 120%;
+}
+
+.openEventFolder{
+    display: none;
+    background-image: url('photos/openFolder.png');
+    width:65%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 756/537;
+    left: 27%;
+    top:11%;
+    z-index: 101;
+}
+
+.openEventFolder button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+
+
+
+
 .wizardPhoto{
+    height:65%;
+    position: relative;
+    left:45%;
+    top:25%
+}
+.fashionPhoto{
+    height:65%; 
+    position: relative;
+    left:29.5%;
+    top:25%
+}
+
+.eventPhoto{
     height:65%;
     position: relative;
     left:45%;
