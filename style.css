@@ -15,6 +15,16 @@ html, body {
       background-position: top center; /* crop focuses on top in portrait */
     }
   }
+
+
+
+
+
+p {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size:25px;
+}
 .taskbar{
     position: fixed;
     bottom: 0;
@@ -133,6 +143,41 @@ html, body {
     font-size:0;
 }
 
+/*contactme folder*/
+.contactGlobeIcon{
+    height:15%;
+    position: relative;
+    top: 55;
+}
+.contactMe{
+    width: 200px;
+    position: relative;
+    left: 60%;
+    bottom:50%;
+    font-size: 120%;
+}
+.openContactMe{
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width:35%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 60%;
+    top:4%;
+    z-index: 101;
+}
+
+.openContactMe button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
 
 
 

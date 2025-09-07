@@ -3,12 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const portClickableDiv2 = document.getElementById('portClickableDiv2');
   const portHiddenDiv = document.getElementById('portHiddenDiv');
 
+  const fashClickableDiv = document.getElementById('fashClickableDiv');
+  const fashClickableDiv2 = document.getElementById('fashClickableDiv2');
+  const fashHiddenDiv = document.getElementById('fashHiddenDiv');
+
+  const eventClickableDiv = document.getElementById('eventClickableDiv');
+  const eventClickableDiv2 = document.getElementById('eventClickableDiv2');
+  const eventHiddenDiv = document.getElementById('eventHiddenDiv');
+
+  const contactClickableDiv = document.getElementById('contactClickableDiv');
+  const contactClickableDiv2 = document.getElementById('contactClickableDiv2');
+  const contactHiddenDiv = document.getElementById('contactHiddenDiv');
+
+
   portClickableDiv.addEventListener('click', function() {
     const currentDisplay = window.getComputedStyle(portHiddenDiv).display;
     if (currentDisplay === 'none') {
-      portHiddenDiv.style.display = 'block';
+      portHiddenDiv.style.display = 'block'; //displays the element
     } else {
-      portHiddenDiv.style.display = 'none';
+      portHiddenDiv.style.display = 'none'; //hides the element
     }
   });
   portClickableDiv2.addEventListener('click', function() {
@@ -20,9 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  const fashClickableDiv = document.getElementById('fashClickableDiv');
-  const fashClickableDiv2 = document.getElementById('fashClickableDiv2');
-  const fashHiddenDiv = document.getElementById('fashHiddenDiv');
+  
 
   fashClickableDiv.addEventListener('click', function() {
     const currentDisplay = window.getComputedStyle(fashHiddenDiv).display;
@@ -41,9 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  const eventClickableDiv = document.getElementById('eventClickableDiv');
-  const eventClickableDiv2 = document.getElementById('eventClickableDiv2');
-  const eventHiddenDiv = document.getElementById('eventHiddenDiv');
+ 
 
   eventClickableDiv.addEventListener('click', function() {
     const currentDisplay = window.getComputedStyle(eventHiddenDiv).display;
@@ -59,6 +68,24 @@ document.addEventListener('DOMContentLoaded', function() {
       eventHiddenDiv.style.display = 'block';
     } else {
       eventHiddenDiv.style.display = 'none';
+    }
+  });
+
+
+  contactClickableDiv.addEventListener('click', function() {
+    const currentDisplay = window.getComputedStyle(contactHiddenDiv).display;
+    if (currentDisplay === 'none') {
+      contactHiddenDiv.style.display = 'block';
+    } else {
+      contactHiddenDiv.style.display = 'none';
+    }
+  });
+  contactClickableDiv2.addEventListener('click', function() {
+    const currentDisplay = window.getComputedStyle(contactHiddenDiv).display;
+    if (currentDisplay === 'none') {
+      contactHiddenDiv.style.display = 'block';
+    } else {
+      contactHiddenDiv.style.display = 'none';
     }
   });
 
