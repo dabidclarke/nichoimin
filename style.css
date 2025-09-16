@@ -225,7 +225,7 @@ p {
     height:65%;
     position: relative;
     left:23%;
-    margin-top: 22%;
+    margin-top: 28%;
 }
 
 @media (min-width: 1200px) { /*desktop mode*/
@@ -245,7 +245,7 @@ p {
     height:47%; 
     position: relative;
     left:4.5%;
-    margin-top: 22%;
+    margin-top: 28%;
 }
 
 @media (min-width: 1200px) { /*desktop mode*/
@@ -261,7 +261,7 @@ p {
     height:65%;
     position: relative;
     left:23%;
-    margin-top: 22%;
+    margin-top: 28%;
 }
 
 @media (min-width: 1200px) { /*desktop mode*/
