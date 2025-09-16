@@ -3,18 +3,21 @@ body {
     background-size: cover;      /* make it fill the screen */
     background-repeat: no-repeat; /* prevent tiling */
     
+    
 }
+
 html, body {
     height: 100%;
     margin: 0;                 /* remove default gap */
     overflow: hidden; /* hides scrollbars */
-  }
+    cursor: url('photos/laptopCursor.png') 4 4, auto;
+}
 
-  @media (orientation: portrait) {
+@media (orientation: portrait) {
     body {
       background-position: top center; /* crop focuses on top in portrait */
     }
-  }
+}
 
 
 
