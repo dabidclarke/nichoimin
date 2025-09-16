@@ -96,7 +96,7 @@ p {
     font-size: 120%;
 }
 
-.openFashionFolder{
+.openFashionFolder{/*phone mode*/
     display: none;
     background-image: url('photos/ContactTest.png');
     width:90%;
@@ -147,6 +147,19 @@ p {
     font-size: 120%;
 }
 
+.openEventFolder{/*phone mode*/
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width:90%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 7%;
+    top:4%;
+    z-index: 101;
+}
+
+@media (min-width: 768px) { /*desktop mode*/
 .openEventFolder{
     display: none;
     background-image: url('photos/openFolder.png');
@@ -158,7 +171,7 @@ p {
     top:11%;
     z-index: 101;
 }
-
+}
 .openEventFolder button{
     height: 10%;
     width: 10%;
@@ -172,9 +185,9 @@ p {
 
 /*contactme folder*/
 .contactGlobeIcon{
-    height:15%;
+    height:10%;
     position: relative;
-    top: 55;
+    top: 42;
 }
 .contactMe{
     width: 200px;
@@ -208,10 +221,10 @@ p {
 
 
 
-.wizardPhoto{
+.wizardPhoto{/*phone mode*/
     height:65%;
     position: relative;
-    left:45%;
+    left:23%;
     top:25%
 }
 
@@ -228,7 +241,7 @@ p {
 
 
 
-.fashionPhoto{
+.fashionPhoto{/*phone mode*/
     height:47%; 
     position: relative;
     left:4.5%;
@@ -244,9 +257,17 @@ p {
 }
 }
 
+.eventPhoto{/*phone mode*/
+    height:65%;
+    position: relative;
+    left:23%;
+    top:25%
+}
+
+@media (min-width: 768px) { /*desktop mode*/
 .eventPhoto{
     height:65%;
     position: relative;
     left:45%;
     top:25%
-}
+}}
