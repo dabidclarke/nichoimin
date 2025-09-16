@@ -246,7 +246,7 @@ p {
         height:65%;
         position: absolute;
         left:45%;
-        top:25%
+        margin-top: 20%;
     }
 }
 
@@ -266,7 +266,7 @@ p {
     height:65%; 
     position: relative;
     left:29.5%;
-    margin-top: 22%;
+    margin-top: 20%;
 }
 }
 
@@ -282,5 +282,5 @@ p {
     height:65%;
     position: relative;
     left:45%;
-    top:25%
+    margin-top: 20%;
 }}
