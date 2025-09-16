@@ -58,7 +58,7 @@ p {
     z-index: 101;
 }
 
-@media (min-width: 768px) { /*desktop mode*/
+@media (min-width: 1200px) { /*desktop mode*/
 .openPortraitFolder{
     display: none;
     background-image: url('photos/openFolder.png');
@@ -107,7 +107,7 @@ p {
     top:4%;
     z-index: 99;
 }
-@media (min-width: 768px) { /*desktop mode*/
+@media (min-width: 1200px) { /*desktop mode*/
 .openFashionFolder{
     display: none;
     background-image: url('photos/openFolder.png');
@@ -159,7 +159,7 @@ p {
     z-index: 101;
 }
 
-@media (min-width: 768px) { /*desktop mode*/
+@media (min-width: 1200px) { /*desktop mode*/
 .openEventFolder{
     display: none;
     background-image: url('photos/openFolder.png');
@@ -228,7 +228,7 @@ p {
     top:25%
 }
 
-@media (min-width: 768px) { /*desktop mode*/
+@media (min-width: 1200px) { /*desktop mode*/
     .wizardPhoto{
         height:65%;
         position: absolute;
@@ -248,7 +248,7 @@ p {
     top:25%
 }
 
-@media (min-width: 768px) { /*desktop mode*/
+@media (min-width: 1200px) { /*desktop mode*/
 .fashionPhoto{
     height:65%; 
     position: relative;
@@ -264,7 +264,7 @@ p {
     top:25%
 }
 
-@media (min-width: 768px) { /*desktop mode*/
+@media (min-width: 1200px) { /*desktop mode*/
 .eventPhoto{
     height:65%;
     position: relative;
