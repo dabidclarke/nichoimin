@@ -419,3 +419,19 @@ p{
     font-size: 3rem;
 }
 }
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  z-index: 200;
+}
+.prevBtn { left: 5%; }
+.nextBtn { right: 5%; }
+.carouselBtn:hover { background: rgba(0,0,0,0.6); }
