@@ -43,11 +43,12 @@ p {
 /*portrait folder*/
 .portraitFolder{
     padding: 10px;
-    width: 80px;
+    width: 7.5rem;
     position: relative;
     left: 20%;
     top: 20%;
     font-size: 120%;
+    background-color: blue;
 }
 .openPortraitFolder{    /*phone mode*/
     display: none;
@@ -93,18 +94,19 @@ p {
 
 .fashionFolder{ /*phone mode*/
     padding: 10px;
-    width: 80px;
+    width: 7.5rem;
     position: relative;
     left: 70%;
     top: 10%;
     font-size: 120%;
+    background-color: red;
 }
 
 
 @media (min-width: 1200px) { /*desktop mode*/
 .fashionFolder{
     padding: 10px;
-    width: 80px;
+    width: 7.5rem;
     position: relative;
     left: 40%;
     top: 10%;
@@ -152,15 +154,15 @@ p {
     height:10%;
     position: relative;
     top: 1.5rem;
-    left: -1rem;
 }
 .eventFolder{
     padding: 10px;
-    width: 80px;
+    width: 7.5rem;
     position: relative;
     left: 20%;
     top: 20%;
     font-size: 120%;
+    background-color: green;
 }
 
 .openEventFolder{/*phone mode*/
@@ -208,18 +210,19 @@ p {
 
 .contactMe{ /*phone mode*/
     padding: 10px;
-    width: 150px;
+    width: 8rem;
     position: relative;
     left: 60%;
     top: -45%;
     font-size: 100%;
+    background-color: yellow;
 }
 
 
 @media (min-width: 1200px) { /*desktop mode*/
 .contactMe{
     padding: 10px;
-    width: 150px;
+    width: 7.5rem;
     position: relative;
     left: 60%;
     top: -45%;
@@ -235,7 +238,7 @@ p {
     position: absolute;
     aspect-ratio: 722/929;
     left: 7%;
-    top:4%;
+    top:1rem;
     z-index: 101;
 }
 
