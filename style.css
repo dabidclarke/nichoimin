@@ -1,5 +1,5 @@
 body {
-    background-image: url('photos/background.png');
+    background-image: url('photos/background.JPG');
     background-size: cover;      /* make it fill the screen */
     background-repeat: no-repeat; /* prevent tiling */
     
@@ -151,7 +151,8 @@ p {
 .eventFolderIcon{
     height:10%;
     position: relative;
-    top:20;
+    top: 1.5rem;
+    left: -1rem;
 }
 .eventFolder{
     padding: 10px;
@@ -202,7 +203,7 @@ p {
 .contactGlobeIcon{
     height:10%;
     position: relative;
-    top: 42;
+    top: 1.5rem;
 }
 
 .contactMe{ /*phone mode*/
