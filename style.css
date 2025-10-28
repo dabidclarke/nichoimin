@@ -43,7 +43,7 @@ p {
 /*portrait folder*/
 .portraitFolder{
     padding: 10px;
-    width: 12rem;
+    width: 15rem;
     position: relative;
     left: 20%;
     top: 20%;
@@ -102,7 +102,7 @@ p {
 
 .fashionFolder{ /*phone mode*/
     padding: 10px;
-    width: 7.5rem;
+    width: 12rem;
     position: relative;
     left: 70%;
     top: 10%;
@@ -165,12 +165,18 @@ p {
 }
 .eventFolder{
     padding: 10px;
-    width: 7.5rem;
+    width: 12rem;
     position: relative;
     left: 20%;
     top: 20%;
     font-size: 120%;
     background-color: green;
+}
+@media (min-width: 1200px) { /*desktop mode*/
+.eventFolder{
+    width: 7.5rem;
+}
+
 }
 
 .openEventFolder{/*phone mode*/
@@ -218,7 +224,7 @@ p {
 
 .contactMe{ /*phone mode*/
     padding: 10px;
-    width: 8rem;
+    width: 15rem;
     position: relative;
     left: 60%;
     top: -45%;
