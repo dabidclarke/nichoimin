@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', async () => {
   const folders = ['port', 'run', 'fash', 'event', 'contact'];
 
@@ -64,5 +65,56 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentIndex[prefix] = (currentIndex[prefix] + 1) % imgs.length;
       img.src = imgs[currentIndex[prefix]];
     });
+  });
+});
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const folders = ['port', 'run', 'fash', 'event', 'contact'];
+
+  // Folder open/close logic (unchanged)
+  folders.forEach(prefix => {
+    const openDiv = document.getElementById(`${prefix}HiddenDiv`);
+    const buttons = [
+      document.getElementById(`${prefix}ClickableDiv`),
+      document.getElementById(`${prefix}ClickableDiv2`)
+    ];
+    buttons.forEach(btn => btn?.addEventListener('click', () => {
+      openDiv.style.display =
+        (window.getComputedStyle(openDiv).display === 'none') ? 'block' : 'none';
+    }));
+  });
+
+  // Fixed number of images per folder
+  const pathMap = {
+    port: "photos/portraits",
+    run: "photos/runway",
+    fash: "photos/fashion",
+    event: "photos/events",
+    contact: "photos/contact"
+  };
+
+  const folderImages = {};
+  const currentIndex = {};
+
+  folders.forEach(prefix => {
+    const count = 14; // number of images in this folder
+    const images = [];
+    for (let i = 1; i <= count; i++) {
+      images.push(`${pathMap[prefix]}/img${i}.jpg`);
+    }
+    folderImages[prefix] = images;
+    currentIndex[prefix] = 0;
+
+    const img = document.getElementById(`${prefix}Photo`);
+    if (img && images.length > 0) img.src = images[0];
+
+    if (img) {
+      img.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex[prefix] = (currentIndex[prefix] + 1) % images.length;
+        img.src = images[currentIndex[prefix]];
+      });
+    }
   });
 });
