@@ -315,3 +315,9 @@ p {
     left:45%;
     margin-top: 20%;
 }}
+
+@media (max-width: 1200px) { /*phone mode*/
+p{
+    font-size: 3rem;
+}
+}
